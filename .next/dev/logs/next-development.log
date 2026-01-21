@@ -1,0 +1,140 @@
+[00:00:00.750] Server  LOG     ✓ Ready in 565ms
+[00:00:06.145] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:06.817] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="dark scrol...">
+                          <body
++                           className="inter_7b064e0d-module__MOT0tq__variable roboto_834dcdd5-module__aqgU8a__variabl..."
+-                           className="inter_7b064e0d-module__MOT0tq__variable roboto_834dcdd5-module__aqgU8a__variabl..."
+                          >
+                  ...
+
+[00:04:44.309] Server  LOG     ✓ Compiled in 41ms
+[00:04:44.406] Browser ERROR   uncaughtError: ReferenceError: LogoSVG is not defined
+[00:04:51.698] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:51.844] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:52.629] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:04:52.812] Server  LOG     ✓ Compiled in 24ms
+[00:04:52.872] Browser ERROR   uncaughtError: ReferenceError: LogoSVG is not defined
+[00:04:59.708] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:04:59.778] Server  LOG     ✓ Compiled in 16ms
+[00:04:59.856] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:00.023] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:05:04.709] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:05.363] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="dark scrol...">
+                          <body
++                           className="inter_7b064e0d-module__MOT0tq__variable roboto_834dcdd5-module__aqgU8a__variabl..."
+-                           className="inter_7b064e0d-module__MOT0tq__variable roboto_834dcdd5-module__aqgU8a__variabl..."
+                          >
+                  ...
+
+[00:05:05.363] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:09.419] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:09.873] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:34.347] Server  LOG     ✓ Compiled in 25ms
+[00:13:34.444] Browser ERROR   uncaughtError: Error: Image with src "/logo-full.png" is missing required "width" property.
+[00:13:34.444] Browser ERROR   uncaughtError: Error: Image with src "/logo-full.png" is missing required "width" property.
+[00:13:39.024] Server  ERROR   ⨯ Error: Image with src "/logo-full.png" is missing required "width" property.
+[00:13:39.144] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:39.713] Browser ERROR   uncaughtError: Error: Image with src "/logo-full.png" is missing required "width" property.
+[00:13:51.562] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:13:51.564] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:13:51.565] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:13:51.675] Server  LOG     ✓ Compiled in 22ms
+[00:13:51.951] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:52.040] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:52.067] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:52.170] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:52.757] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:52.931] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:06.189] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:06.815] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:10.285] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:10.456] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:11.307] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:11.437] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:11.534] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:11.697] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:12.132] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:12.325] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:30:28.294] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:29.111] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:32:09.643] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:10.451] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:34:18.796] Server  LOG     ✓ Compiled in 27ms
+[00:34:19.257] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/public/Logo White Full.png" "received" null
+[00:34:19.282] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/public/Logo White Full.png" "received" null
+[00:34:28.515] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/public/Logo White Full.png" "received" null
+[00:34:28.517] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:28.965] Browser WARN    Image with src "/public/Logo White Full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:34:28.965] Browser WARN    Image with src "/logo-full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:34:43.450] Server  LOG     ✓ Compiled in 19ms
+[00:34:43.558] Browser WARN    Image with src "/Logo White Full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:34:43.560] Browser WARN    Image with src "/Logo White Full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:34:43.560] Browser WARN    Image with src "/Logo White Full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:35:17.832] Server  LOG     ✓ Compiled in 16ms
+[00:38:40.304] Server  ERROR   ⨯ "The requested resource isn't a valid image for" "/public/Logo White Full.png" "received" null
+[08:20:37.963] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:20:38.667] Browser WARN    Image with src "/Logo White Full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:22:51.923] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:22:52.376] Browser WARN    Image with src "/Logo White Full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:40:36.682] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:40:37.409] Browser WARN    Image with src "/Logo White Full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:40:39.357] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:40:39.475] Browser WARN    Image with src "/Logo White Full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[08:40:39.575] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[08:40:39.752] Browser WARN    Image with src "/Logo White Full.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
