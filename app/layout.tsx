@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark scroll-smooth">
+    <html lang="en" className="dark">
       <body
         className={`${inter.variable} ${roboto.variable} antialiased selection:bg-[#FF1E1E] selection:text-white`}
       >

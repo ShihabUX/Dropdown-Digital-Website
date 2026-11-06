@@ -1,3 +1,4 @@
+import { MotionSystem } from "@/app/components/ui/MotionSystem";
 import { Navbar } from "@/app/components/layout/Navbar";
 import { Footer } from "@/app/components/layout/Footer";
 import { Hero } from "@/app/components/sections/Hero";
@@ -11,7 +12,7 @@ import { Testimonials } from "@/app/components/sections/Testimonials";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#080808] selection:bg-[#FF1E1E] selection:text-white">
+    <MotionSystem><main className="min-h-screen bg-[#080808] selection:bg-[#FF1E1E] selection:text-white">
       <Navbar />
       <Hero />
       <TechStack />
@@ -22,6 +23,6 @@ export default function Home() {
       <Portfolio />
       <Testimonials />
       <Footer />
-    </main>
+    </main></MotionSystem>
   );
 }

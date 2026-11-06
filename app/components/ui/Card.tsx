@@ -13,9 +13,9 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
         return (
             <motion.div
                 ref={ref}
-                whileHover={{ y: -5, boxShadow: "0 10px 30px -10px rgba(255, 30, 30, 0.15)" }}
+                data-reveal
                 className={cn(
-                    "bg-[#121212]/80 backdrop-blur-md border border-white/10 rounded-3xl p-6 relative overflow-hidden group",
+                    "motion-card bg-[#121212]/80 backdrop-blur-md border border-white/10 rounded-3xl p-6 relative overflow-hidden group",
                     className
                 )}
                 {...props}

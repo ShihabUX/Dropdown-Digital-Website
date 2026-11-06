@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/app/components/ui/Button";
-import { motion } from "framer-motion";
+
 
 export const Hero = () => {
     return (
@@ -12,42 +12,35 @@ export const Hero = () => {
 
             <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Text Content */}
-                <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6 }}
+                <div
                     className="z-10"
                 >
-                    <div className="inline-block px-3 py-1 bg-[#FF1E1E]/10 border border-[#FF1E1E]/20 rounded-full mb-6">
+                    <div data-hero className="inline-block px-3 py-1 bg-[#FF1E1E]/10 border border-[#FF1E1E]/20 rounded-full mb-6">
                         <span className="text-[#FF1E1E] text-xs font-bold uppercase tracking-wider">Startup Hustle • Enterprise Stability</span>
                     </div>
 
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-                        Remote Control for <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60">Your Business.</span>
+                        <span data-hero className="block">Remote Control for</span> <span data-hero className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60">Your Business.</span>
                     </h1>
 
-                    <p className="text-lg md:text-xl text-white/60 mb-8 max-w-lg leading-relaxed">
+                    <p data-hero className="text-lg md:text-xl text-white/60 mb-8 max-w-lg leading-relaxed">
                         We build powerful web admin dashboards and scalable MVPs. Launch your startup fast, or upgrade your enterprise with AI brains.
                     </p>
 
-                    <div className="flex flex-wrap gap-4">
+                    <div data-hero className="flex flex-wrap gap-4">
                         <Button size="lg">Start Your Project</Button>
                         <Button size="lg" variant="outline">View Our Work</Button>
                     </div>
-                </motion.div>
+                </div>
 
                 {/* 3D Dashboard Visual */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20, rotateX: 10 }}
-                    animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="relative z-10 perspective-1000"
+                <div
+                    data-hero className="relative z-10 perspective-1000"
                 >
                     {/* Tilted Container */}
-                    <motion.div
-                        className="relative w-full aspect-[4/3] bg-[#121212] border border-white/10 rounded-2xl shadow-2xl p-4 overflow-hidden"
+                    <div
+                        className="hero-artwork relative w-full aspect-[4/3] bg-[#121212] border border-white/10 rounded-2xl shadow-2xl p-4 overflow-hidden"
                         style={{
-                            transform: "perspective(1000px) rotateY(-10deg) rotateX(5deg)",
                             boxShadow: "20px 20px 60px rgba(0,0,0,0.5), -5px -5px 20px rgba(255,255,255,0.02)"
                         }}
                     >
@@ -83,13 +76,11 @@ export const Hero = () => {
                         <div className="absolute top-6 right-6 px-3 py-1 bg-[#FF1E1E] text-white text-xs font-bold rounded shadow-[0_0_15px_#FF1E1E]">
                             LIVE DATA
                         </div>
-                    </motion.div>
+                    </div>
 
                     {/* Floating Elements */}
-                    <motion.div
-                        animate={{ y: [0, -10, 0] }}
-                        transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-                        className="absolute -bottom-10 -left-10 w-48 p-4 bg-[#1A1A1A] border border-white/10 rounded-xl shadow-xl z-20 backdrop-blur-sm"
+                    <div
+                        className="absolute -bottom-6 left-0 lg:-left-10 w-48 p-4 bg-[#1A1A1A] border border-white/10 rounded-xl shadow-xl z-20 backdrop-blur-sm"
                     >
                         <div className="flex items-center gap-3 mb-2">
                             <div className="w-8 h-8 rounded-full bg-[#FF1E1E]/20 flex items-center justify-center text-[#FF1E1E] text-xs font-bold">AI</div>
@@ -102,22 +93,19 @@ export const Hero = () => {
                             <span>Processing...</span>
                             <span>85%</span>
                         </div>
-                    </motion.div>
+                    </div>
 
-                </motion.div>
+                </div>
             </div>
 
             {/* Scroll Down Indicator */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, y: [0, 10, 0] }}
-                transition={{ delay: 1, duration: 2, repeat: Infinity }}
+            <div
                 className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
             >
                 <div className="w-6 h-10 border-2 border-white/10 rounded-full flex justify-center p-2">
                     <div className="w-1 h-3 bg-[#FF1E1E] rounded-full" />
                 </div>
-            </motion.div>
+            </div>
         </section>
     );
 };

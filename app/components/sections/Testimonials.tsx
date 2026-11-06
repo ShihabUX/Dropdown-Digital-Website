@@ -15,7 +15,7 @@ export const Testimonials = () => {
                         <Quote className="w-12 h-12 text-[#FF1E1E]/40" />
                     </div>
                     <blockquote className="text-2xl md:text-3xl font-medium text-white leading-relaxed mb-8">
-                        "Dropdown Digital transformed our complex data requirements into an elegant platform. They didn't just build it; they became our tech partners."
+                        &quot;Dropdown Digital transformed our complex data requirements into an elegant platform. They didn&apos;t just build it; they became our tech partners.&quot;
                     </blockquote>
                     <cite className="not-italic flex flex-col items-center gap-2">
                         <span className="font-bold text-white text-lg">Founder</span>

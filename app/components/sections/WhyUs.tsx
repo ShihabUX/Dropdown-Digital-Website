@@ -28,15 +28,15 @@ export const WhyUs = () => {
     return (
         <section id="philosophy" className="py-24 relative">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="mb-12">
+                <div data-reveal className="mb-12">
                     <h2 className="text-sm font-bold text-[#FF1E1E] uppercase tracking-widest mb-2">Philosophy</h2>
                     <h3 className="text-3xl md:text-4xl font-bold text-white">Why Dropdown Digital?</h3>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {features.map((feature, index) => (
-                        <Card key={index} className="h-full flex flex-col">
-                            <div className="mb-6 p-3 bg-[#FF1E1E]/10 w-fit rounded-xl border border-[#FF1E1E]/20">
+                        <Card data-delay={index * 0.06} key={index} className="h-full flex flex-col">
+                            <div data-reveal className="mb-6 p-3 bg-[#FF1E1E]/10 w-fit rounded-xl border border-[#FF1E1E]/20">
                                 {feature.icon}
                             </div>
                             <h4 className="text-xl font-bold text-white mb-2">{feature.title}</h4>
