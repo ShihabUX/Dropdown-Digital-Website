@@ -27,10 +27,9 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         return (
             <motion.button
                 ref={ref}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+
                 className={cn(
-                    "inline-flex items-center justify-center rounded-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF1E1E] disabled:pointer-events-none disabled:opacity-50",
+                    "motion-button inline-flex items-center justify-center rounded-lg font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF1E1E] disabled:pointer-events-none disabled:opacity-50",
                     variants[variant],
                     sizes[size],
                     className

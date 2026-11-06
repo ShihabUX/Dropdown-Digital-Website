@@ -34,14 +34,14 @@ export const Process = () => {
     return (
         <section className="py-24 relative bg-[#080808]">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="mb-16 text-center">
+                <div data-reveal className="mb-16 text-center">
                     <h2 className="text-sm font-bold text-[#FF1E1E] uppercase tracking-widest mb-2">How We Work</h2>
                     <h3 className="text-3xl md:text-4xl font-bold text-white">From Concept to Code.</h3>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {steps.map((item, index) => (
-                        <Card key={index} className="relative group hover:-translate-y-2 transition-transform duration-300">
+                        <Card data-delay={index * 0.06} key={index} className="relative group">
                             <div className="absolute top-6 right-6 text-4xl font-bold text-white/5 select-none">{item.step}</div>
                             <div className="w-12 h-12 rounded-full bg-[#FF1E1E]/10 flex items-center justify-center mb-6 border border-[#FF1E1E]/20">
                                 {item.icon}

@@ -1,7 +1,7 @@
 "use client";
 
 import { BentoGrid, BentoGridItem } from "@/app/components/ui/BentoGrid";
-import { AppWindow, Code2, LineChart, Palette } from "lucide-react";
+import { Code2, LineChart, Palette } from "lucide-react";
 
 export const Services = () => {
     const items = [
@@ -37,7 +37,7 @@ export const Services = () => {
 
     return (
         <section id="services" className="py-24 bg-[#0a0a0a]">
-            <div className="max-w-7xl mx-auto px-6 mb-12">
+            <div data-reveal className="max-w-7xl mx-auto px-6 mb-12">
                 <h2 className="text-sm font-bold text-[#FF1E1E] uppercase tracking-widest mb-2">Capabilities</h2>
                 <h3 className="text-3xl md:text-4xl font-bold text-white">Full-Stack Excellence.</h3>
             </div>
@@ -45,6 +45,7 @@ export const Services = () => {
                 {items.map((item, i) => (
                     <BentoGridItem
                         key={i}
+                        delay={i * 0.06}
                         title={item.title}
                         description={item.description}
                         header={item.header}

@@ -3,7 +3,6 @@
 import { Card } from "@/app/components/ui/Card";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 
 const projects = [
     {
@@ -39,7 +38,7 @@ export const Portfolio = () => {
     return (
         <section id="portfolio" className="py-24 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="mb-12 flex justify-between items-end">
+                <div data-reveal className="mb-12 flex justify-between items-end">
                     <div>
                         <h2 className="text-sm font-bold text-[#FF1E1E] uppercase tracking-widest mb-2">Portfolio</h2>
                         <h3 className="text-3xl md:text-4xl font-bold text-white">The Proof.</h3>
@@ -51,7 +50,7 @@ export const Portfolio = () => {
 
                 <div className="grid grid-cols-1 gap-12">
                     {projects.map((project, index) => (
-                        <Card key={index} className="p-0 overflow-hidden group">
+                        <Card data-delay={index * 0.06} key={index} className="p-0 overflow-hidden group">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
                                 {/* Image Side */}
                                 <div className="relative h-64 md:h-96 w-full bg-[#1A1A1A] overflow-hidden">

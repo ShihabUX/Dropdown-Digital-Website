@@ -29,3 +29,36 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-sans), sans-serif;
 }
+
+/* One restrained motion vocabulary; native scrolling and visible server markup. */
+:root { --motion-ease: cubic-bezier(.22, 1, .36, 1); }
+html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+section[id] { scroll-margin-top: 1rem; }
+a, button { -webkit-tap-highlight-color: transparent; }
+a { transition: color 180ms ease, opacity 180ms ease; }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+a[aria-current="location"] { color: var(--accent); }
+.motion-button { transition: transform 180ms var(--motion-ease), background-color 180ms ease, color 180ms ease, border-color 180ms ease; }
+.motion-button:active:not(:disabled) { transform: scale(.98); }
+.motion-card { transition: border-color 240ms ease; }
+.motion-card:focus-within { border-color: #ff1e1e66; }
+@media (hover: hover) and (pointer: fine) {
+  .motion-button:hover:not(:disabled) { transform: translateY(-2px); }
+  .motion-card:hover { border-color: #ff1e1e44; }
+  a svg { transition: transform 200ms var(--motion-ease); }
+  a:hover svg { transform: translate(2px, -2px); }
+}
+@media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+  .hero-artwork { transform: perspective(1000px) rotateY(-10deg) rotateX(5deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition-duration: 0s !important;
+  }
+  [data-hero], [data-reveal], .motion-button { transform: none !important; opacity: 1 !important; }
+}
